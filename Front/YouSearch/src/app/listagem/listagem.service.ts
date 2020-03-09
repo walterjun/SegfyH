@@ -9,7 +9,7 @@ import { Procura } from './Procura';
 })
 export class ListagemService {
 
-  APIUrl:string = "http://localhost:39063/api/"; 
+  APIUrl:string = "http://yousearchapi.websolution.eti.br/api/"; 
 
   constructor(private http: HttpClient) { }
 

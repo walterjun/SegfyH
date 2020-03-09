@@ -14,7 +14,7 @@ namespace YouSearch.Aplicacao.IoC.ORMs.EFCore
         {
             IConfiguration dbConnectionSettings = ResolveConfiguration.GetConnectionSettings(configuration);
             string conn = dbConnectionSettings.GetConnectionString("DefaultConnection");
-            services.AddDbContext<AplicacaoContexto>(options => options.UseSqlServer(conn));
+            services.AddDbContext<AplicacaoContexto>(options => options.UseMySQL(conn));
 
             services.AddScoped(typeof(IRepositorioAsync<>), typeof(RepositorioAsync<>));
             services.AddScoped<IPageInfoRepositorio, PageInfoRepositorio>();

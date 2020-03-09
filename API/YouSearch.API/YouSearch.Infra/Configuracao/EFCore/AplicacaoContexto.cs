@@ -11,7 +11,7 @@ namespace YouSearch.Infra.Configuracao.EFCore
         {
             if (!dbContextOptionsBuilder.IsConfigured)
             {
-                dbContextOptionsBuilder.UseSqlServer(ConexaoBanco.ConnectionConfiguration
+                dbContextOptionsBuilder.UseMySQL(ConexaoBanco.ConnectionConfiguration
                                                     .GetConnectionString("DefaultConnection"));
             }
         }

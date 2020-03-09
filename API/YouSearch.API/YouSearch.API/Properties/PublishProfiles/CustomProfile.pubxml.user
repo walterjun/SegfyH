@@ -7,5 +7,6 @@ by editing this MSBuild file. In order to learn more about this please visit htt
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
     <_PublishTargetUrl>C:\Publish\YouSearch</_PublishTargetUrl>
+    <EncryptedPassword />
   </PropertyGroup>
 </Project>

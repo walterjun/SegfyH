@@ -12,7 +12,7 @@ namespace YouSearch.Testes.ConfiguracaoDB.EFCore
         public AplicacaoContexto DataBaseConfiguration()
         {
             var services = new ServiceCollection();
-            services.AddDbContext<AplicacaoContexto>(options => options.UseSqlServer(ConexaoBanco.ConnectionConfiguration.Value.DefaultConnection));
+            services.AddDbContext<AplicacaoContexto>(options => options.UseMySQL(ConexaoBanco.ConnectionConfiguration.Value.DefaultConnection));
             _provider = services.BuildServiceProvider();
             return _provider.GetService<AplicacaoContexto>();
         }
