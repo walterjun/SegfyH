@@ -3729,11 +3729,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Prova Segfy\\API\\YouSearch.API\\YouSearch.Infra\\YouSearch.Infra.csproj",
+      "projectUniqueName": "C:\\Prova Segfy\\Segfy\\API\\YouSearch.API\\YouSearch.Infra\\YouSearch.Infra.csproj",
       "projectName": "YouSearch.Infra",
-      "projectPath": "C:\\Prova Segfy\\API\\YouSearch.API\\YouSearch.Infra\\YouSearch.Infra.csproj",
+      "projectPath": "C:\\Prova Segfy\\Segfy\\API\\YouSearch.API\\YouSearch.Infra\\YouSearch.Infra.csproj",
       "packagesPath": "C:\\Users\\asp_w\\.nuget\\packages\\",
-      "outputPath": "C:\\Prova Segfy\\API\\YouSearch.API\\YouSearch.Infra\\obj\\",
+      "outputPath": "C:\\Prova Segfy\\Segfy\\API\\YouSearch.API\\YouSearch.Infra\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -3752,8 +3752,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Prova Segfy\\API\\YouSearch.API\\YouSearch.Dominio\\YouSearch.Dominio.csproj": {
-              "projectPath": "C:\\Prova Segfy\\API\\YouSearch.API\\YouSearch.Dominio\\YouSearch.Dominio.csproj"
+            "C:\\Prova Segfy\\Segfy\\API\\YouSearch.API\\YouSearch.Dominio\\YouSearch.Dominio.csproj": {
+              "projectPath": "C:\\Prova Segfy\\Segfy\\API\\YouSearch.API\\YouSearch.Dominio\\YouSearch.Dominio.csproj"
             }
           }
         }

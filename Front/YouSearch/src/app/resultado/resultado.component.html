@@ -1,0 +1,15 @@
+<p class="text-center text-muted" *ngIf="!listaDados"> 
+    Nenhum resultado encontrado.
+</p>
+
+<ul class="list-unstyled">
+    <li  *ngFor="let proc of listaDados" class="listaInline">
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="{{proc.imagem}}">
+            <div class="card-body">
+              <h5 class="card-title">{{proc.titulo}}</h5>
+              <p class="card-text">{{proc.descricao}}</p>
+            </div>
+          </div>
+    </li>
+  </ul>

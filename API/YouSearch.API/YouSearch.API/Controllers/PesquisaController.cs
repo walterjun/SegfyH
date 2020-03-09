@@ -7,6 +7,7 @@ using AutoMapper;
 using Google.Apis.Services;
 using Google.Apis.YouTube.v3;
 using Microsoft.AspNetCore.Mvc;
+using YouSearch.API.Models;
 using YouSearch.Dominio.Entidades;
 using YouSearch.Dominio.Interfaces.Servicos.Domain;
 
@@ -14,19 +15,19 @@ namespace YouSearch.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ValuesController : ControllerBase
+    public class PesquisaController : ControllerBase
     {
         private ISearchResponseServico servico;
         private readonly IMapper mapper;
 
-        public ValuesController(ISearchResponseServico _servico, IMapper _mapper)
+        public PesquisaController(ISearchResponseServico _servico, IMapper _mapper)
         {
             this.servico = _servico;
             this.mapper = _mapper;
         }
         // GET api/values
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<string>>> GetAsync(string termo, string PageToken = null)
+        public async Task<ActionResult<Retorno>> GetAsync(string termo, string PageToken = null)
         {
             var youtubeService = new YouTubeService(new BaseClientService.Initializer()
             {
@@ -35,28 +36,34 @@ namespace YouSearch.API.Controllers
             });
 
             var searchListRequest = youtubeService.Search.List("snippet");
-            searchListRequest.Q = termo; // Replace with your search term.
+            searchListRequest.Q = termo;
             searchListRequest.MaxResults = 50;
 
             if(!string.IsNullOrEmpty(PageToken))
                 searchListRequest.PageToken = PageToken;
 
-            // Call the search.list method to retrieve results matching the specified query term.
             var searchListResponse = await searchListRequest.ExecuteAsync();
 
-            List<string> listaRetorno = new List<string>();
+            Retorno retorno = new Retorno();
+            retorno.ProximaPagina = searchListResponse.NextPageToken;
 
-            // Add each result to the appropriate list, and then display the lists of
-            // matching videos, channels, and playlists.
             foreach (var searchResult in searchListResponse.Items)
             {
-                var resposta = mapper.Map<SearchResponse>(searchResult);
+                var search = mapper.Map<SearchResponse>(searchResult);
 
-                listaRetorno.Add(JsonSerializer.Serialize(searchResult));
 
-                await servico.AddAsync(resposta);
+                retorno.Dados.Add(new Dados()
+                    {
+                        Descricao = search.Snippet.Description,
+                        Imagem = search.Snippet.Thumbnails.High.Url,
+                        Tipo = searchResult.Id.Kind,
+                        Titulo = search.Snippet.Title
+                    }
+                );
+
+                //await servico.AddAsync(search);
             }
-            return listaRetorno;
+            return retorno;
         }
     }
 }

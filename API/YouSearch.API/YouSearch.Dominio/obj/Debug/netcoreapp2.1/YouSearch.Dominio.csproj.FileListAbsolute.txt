@@ -1,0 +1,9 @@
+C:\Prova Segfy\Segfy\API\YouSearch.API\YouSearch.Dominio\bin\Debug\netcoreapp2.1\YouSearch.Dominio.deps.json
+C:\Prova Segfy\Segfy\API\YouSearch.API\YouSearch.Dominio\bin\Debug\netcoreapp2.1\YouSearch.Dominio.dll
+C:\Prova Segfy\Segfy\API\YouSearch.API\YouSearch.Dominio\bin\Debug\netcoreapp2.1\YouSearch.Dominio.pdb
+C:\Prova Segfy\Segfy\API\YouSearch.API\YouSearch.Dominio\obj\Debug\netcoreapp2.1\YouSearch.Dominio.csprojAssemblyReference.cache
+C:\Prova Segfy\Segfy\API\YouSearch.API\YouSearch.Dominio\obj\Debug\netcoreapp2.1\YouSearch.Dominio.csproj.CoreCompileInputs.cache
+C:\Prova Segfy\Segfy\API\YouSearch.API\YouSearch.Dominio\obj\Debug\netcoreapp2.1\YouSearch.Dominio.AssemblyInfoInputs.cache
+C:\Prova Segfy\Segfy\API\YouSearch.API\YouSearch.Dominio\obj\Debug\netcoreapp2.1\YouSearch.Dominio.AssemblyInfo.cs
+C:\Prova Segfy\Segfy\API\YouSearch.API\YouSearch.Dominio\obj\Debug\netcoreapp2.1\YouSearch.Dominio.dll
+C:\Prova Segfy\Segfy\API\YouSearch.API\YouSearch.Dominio\obj\Debug\netcoreapp2.1\YouSearch.Dominio.pdb

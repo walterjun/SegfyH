@@ -687,11 +687,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Prova Segfy\\API\\YouSearch.API\\YouSearch.Dominio\\YouSearch.Dominio.csproj",
+      "projectUniqueName": "C:\\Prova Segfy\\Segfy\\API\\YouSearch.API\\YouSearch.Dominio\\YouSearch.Dominio.csproj",
       "projectName": "YouSearch.Dominio",
-      "projectPath": "C:\\Prova Segfy\\API\\YouSearch.API\\YouSearch.Dominio\\YouSearch.Dominio.csproj",
+      "projectPath": "C:\\Prova Segfy\\Segfy\\API\\YouSearch.API\\YouSearch.Dominio\\YouSearch.Dominio.csproj",
       "packagesPath": "C:\\Users\\asp_w\\.nuget\\packages\\",
-      "outputPath": "C:\\Prova Segfy\\API\\YouSearch.API\\YouSearch.Dominio\\obj\\",
+      "outputPath": "C:\\Prova Segfy\\Segfy\\API\\YouSearch.API\\YouSearch.Dominio\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

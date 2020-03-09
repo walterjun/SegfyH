@@ -1,0 +1,25 @@
+<div class="row">
+    <img src="assets/img/logo.png" class="logo center">
+</div>
+<div class="row">
+    <div class="col-md-4">
+    </div>
+    <div class="col-md-4">
+            <input class="form-control" type="search" placeholder="Procurar..." autofocus 
+            (keyup)="onKey($event)">
+    </div>
+    <div class="col-md-4">
+        <input type="button" class="btn btn-primary" (click)="filtrar()" value="Procurar">
+    </div>
+</div>
+<p></p>
+
+
+<app-resultado
+    [listaDados]="listaDados">
+</app-resultado>
+
+<app-load-button 
+    (click)="load()" 
+    [temMais]="temMais">
+</app-load-button>

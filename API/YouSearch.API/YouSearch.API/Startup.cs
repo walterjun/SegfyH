@@ -29,6 +29,7 @@ namespace YouSearch.API
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
+            services.AddCors();
             // Configurando o serviço de documentação do Swagger
             services.AddSwaggerGen(c =>
             {
@@ -56,6 +57,8 @@ namespace YouSearch.API
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
+            app.UseCors(option => option.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
