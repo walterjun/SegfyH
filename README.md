@@ -1,4 +1,4 @@
-# Desafio técnico para desenvolvedores
+# Desafio técnico
 
 Construa uma nova solução restful, utilizando no backend e no front os frameworks de sua preferência, a qual deverá conectar na API do YouTube e disponibilizar as seguintes funcionalidades:
 
